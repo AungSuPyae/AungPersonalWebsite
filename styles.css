@@ -1,0 +1,195 @@
+html, body {
+    margin: 0;
+}
+body {
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'roboto', sans-serif;
+}
+.nav {
+    height: 80px;
+    width: 100%;
+    display: inline-block;
+    z-index: 3;
+    position: absolute;
+}
+.nav > h1 {
+    color: #000;
+	line-height: 80px;
+	font-size: 28px;
+	font-family: 'Beth Ellen', cursive;
+	font-weight: 400;
+	padding-left: 20px;
+    margin: 0;
+    display: inline;
+}
+.link {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    float: right;
+    margin: 20px;
+}
+.link > li > a{
+    width: 100%;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.5);
+	height: 30px;
+	line-height: 30px;
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333333;
+}
+.link > li {
+    display: inline;
+}
+
+.link li :hover {
+	background: #3498db;
+    transform: scale(1.5);
+    color: white;
+}
+.banner {
+    position: relative;
+}
+.banner > img {
+    position: relative;
+    width: 100%;
+}
+#banner-caption {
+    position: absolute;
+	top: 350px;
+	background: rgba(255,255,255,0.3);
+	width: 100%;
+}
+#banner-caption > h2, #banner-caption > h3 {
+    text-align: center;
+    font-size: 20pt;
+    animation: moveCaption;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+}
+
+@keyframes moveCaption {
+    0%   { transform: translate(-300px); } 
+    50%  { transform: translate(60px); } 
+    100% { transform: translate(0px) }
+}
+@media only screen and (max-width: 600px) {
+    #banner-caption {
+        top: 100px;
+    }
+    #banner-caption > h2, #banner-caption > h3 {
+        font-size: 16pt;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    #banner-caption {
+        top: 150px;
+    }
+    #banner-caption > h2, #banner-caption > h3 {
+        font-size: 16pt;
+    }
+}
+
+#about-me {
+    text-align: center;
+    margin-top: 50px;
+}
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 50px 0px;
+    gap: 100px;
+    flex-direction: row;
+    justify-content: center;
+}
+.about > img {
+    width: 300px;
+    border-radius: 50%;
+    flex: 0 1 10%;
+}
+#info {
+    flex: 0 1 50%;
+}
+
+#hobby-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.hobby {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+.hobby > div {
+    flex: 0 1 33%;
+}
+.hobby > div> img{
+    border-radius: 50%;
+    width: 230px;
+    padding: 5px;
+}
+.hobby > div> img:hover{
+    transform: scale(1.2);
+    transition: ease-in-out 0.25s;
+}
+#skills {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.skills > h2 {
+    display: block;
+}
+.skills > div > img {
+    width: 100px;
+}
+.skills > div > img:hover {
+    transform: scale(1.2);
+    transition: ease-in-out 0.25s;
+}
+
+.skills > div {
+    flex: 0 1 25%;
+    text-align: center;
+    
+}
+#java > img {
+    width: 55px;
+}
+
+#contact-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact {
+    text-align: center;
+    margin: 50px;
+}
+.contact > a {
+    padding: 10px;
+}
+
+.contact > a > img{
+    border-radius: 10px;
+}
+.contact > a > img:hover {
+    transform: scale(1.5);
+    transition: ease-in-out 0.25s;
+}
